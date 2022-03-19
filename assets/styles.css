@@ -1,0 +1,64 @@
+* {
+    font-family: "Roboto";
+}
+
+.main-title {
+    font-size: 102px;
+    font-weight: 700;
+    color: lightskyblue;
+    text-align: left;
+    margin: auto;
+}
+
+.left-block {
+    text-align: left;
+    margin: 10% auto 0 0;
+    align-items: center;
+    width: 50%;
+    padding-left: 5%;
+
+}
+
+.subheader:hover span {
+    display: none;
+}
+
+.subheader:hover::before {
+    content: "a naive-bayes sentiment analyzer for anything, really";
+}
+
+.right-block {
+    margin: 5% 0 0 auto;
+}
+
+.submit-btn {
+    background-color: lightgray;
+    margin-left: 10px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 3px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    opacity: 1.0;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+
+.tweetBox {
+    background-position: center center;
+    font-size: 15px;
+    background-image: url('./assets/download.png');
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+    width:65%;
+    border-radius: 9px;
+    border: 1px solid lightgray;
+}
+
+.search-user-div {
+    padding-top: 5%;
+}
