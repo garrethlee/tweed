@@ -15,7 +15,7 @@ def get_positive_message(score):
     elif score > 80:
         return "Awesome!"
     elif score > 70:
-        return "Joyful, indeed!"
+        return "Joyful, indeed"
     else:
         return "That's great!"
 
