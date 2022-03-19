@@ -112,7 +112,6 @@ def get_analyze_text(clicks1, clicks2, clicks3, username):
     if not ctx.triggered:
         return make_app_layout(left_block_default, right_block_default)
     else:
-        print(ctx)
         button_id = ctx.triggered[0]['prop_id'].split('.')[0]
         if button_id == "analyze-text":
             return make_app_layout(left_block_text_analyzer, right_block_text_analyzer) if clicks1 else make_app_layout(left_block_default)
@@ -124,7 +123,6 @@ def get_analyze_text(clicks1, clicks2, clicks3, username):
                 return make_app_layout(left_block_user_analyzer, [html.H3("Username not found!")])
             scores = list(map(get_text_sentiment, tweets))
             data = list(zip(tweets,scores))
-            print(data)
             fig1, fig2 = make_plots(data)
             return make_app_layout(left_block_user_analyzer, [dcc.Graph(figure=fig1), dcc.Graph(figure=fig2)]) if clicks3 else make_app_layout(left_block_default)
         
