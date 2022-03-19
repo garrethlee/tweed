@@ -3,3 +3,4 @@ stopwords
 punkt
 universal_tagset
 averaged_perceptron_tagger
+omw-1.4
