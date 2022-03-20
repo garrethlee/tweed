@@ -1,6 +1,8 @@
 # Tweed
 A naive-bayes classifier for tweets
 
+[Access the website here](https://tweed-app.herokuapp.com)
+
 The website has two main functionalities:
 
 **1. Text Sentiment Analyzer 💬** <br>
